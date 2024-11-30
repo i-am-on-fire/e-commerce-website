@@ -1,0 +1,25 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 card p-5">
+            <h3>Create Account</h3>
+            <form [formGroup]="signupForm">
+                <div class="form-group">
+                    <label for="title">Display Name</label>
+                    <input type="text" class="form-control" formControlName="displayName" id="title" placeholder="Write your name">
+                </div>
+                <div class="form-group">
+                    <label for="description">Email</label>
+                    <input type="email" class="form-control" formControlName="email" id="description" placeholder="Write email here">
+                </div>
+                <div class="form-group">
+                    <label for="description">Password</label>
+                    <input type="password" class="form-control" formControlName="password" id="description" placeholder="Write password here">
+                </div>
+                <button class="btn btn-primary btn-block" (click)="signup()">Signup</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
